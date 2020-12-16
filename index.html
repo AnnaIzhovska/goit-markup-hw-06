@@ -59,11 +59,11 @@
        <!--Герой-->
     <section class="section hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="button" aria-label="Open modal" data-modal-open>Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="close" data-modal-close>
+                <button type="button" class="close" data-modal-close aria-label="Close modal">
                     <svg class="button-close"  width="11" height="11">
                         <use href="./images/sprite.svg#Close"></use>
                     </svg>
@@ -111,7 +111,7 @@
                            Соглашаюсь с рассылкой и принимаю 
                            <a href="#" class="link">Условия договора</a>
                        </label>
-                       <button type="submit" class="button-send">Отправить</button>
+                       <button type="submit" class="button-send" aria-label="Send" >Отправить</button>
                     </form>
                 </div>
             </div>
@@ -493,7 +493,7 @@
         
     </form>
     
-    <button type="submit" class="button-subscribe">
+    <button type="submit" class="button-subscribe" aria-label="Subscribe">
         <span class="subscribe-text">Подписаться</span>
         <svg width="24" height="24">
             <use href="images/sprite.svg#telegram"> </use>
