@@ -86,6 +86,7 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-decoration: none;
+    cursor:pointer;
 }
 
 .backdrop{
@@ -158,6 +159,8 @@ transform: scale(0.5) translate(-50%, -50%);
 /* MODAL FORM */
 .container-modal{
     padding: 40px;
+    width: 528px;
+   min-height: 581px;
 }
 
 .container-modal .text{
@@ -191,27 +194,39 @@ transform: scale(0.5) translate(-50%, -50%);
     color: #757575;
 }
 
+
 .form-input{
-    position: relative;
+    width: 100%;
     min-height: 40px;
+    padding: 0;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms var(--timing-fuction);
     cursor: pointer;
-
-    margin-bottom: 10px;
 }
 
-.form-input:focus{
+.form-input:focus,
+.form-input:hover{
     outline:none;
     border: 1px solid var(--accent-color);
     
 }
 
+.container-form{
+    display: flex;
+    position: relative;
+
+    margin-bottom: 10px;
+
+}
+
 .icon-form{
    position: absolute;
+   top: 50%;
+   left: 14px;
+   transform: translateY(-50%);
 
    width: 18px;
    height: 18px;
@@ -222,14 +237,16 @@ transform: scale(0.5) translate(-50%, -50%);
     
 }
 
-.form-input:focus + .icon-form{
+.form-input:focus + .icon-form,
+.form-input:hover + .icon-form{
     fill: var(--accent-color);
 }
 
 .form-field textarea{
-    width: 100%;
+    width: 448px;
+    height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     border-radius: 4px;
     margin-bottom: 20px;
     padding: 12px 16px;
@@ -237,7 +254,8 @@ transform: scale(0.5) translate(-50%, -50%);
     transition: border 250ms var(--timing-fuction);
 }
 
-.form-field textarea:focus{
+.form-field textarea:focus,
+.form-field textarea:hover{
 outline: none;
 border: 1px solid var(--accent-color);
 }
@@ -248,6 +266,7 @@ align-items: center;
 justify-content: center;
 width: 100%;
 min-height: 24px;
+margin-bottom: 30px;
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -309,7 +328,7 @@ color: #757575;
 .button-send{
 width: 200px;
 min-height: 50px;
-margin-top: 30px;
+/* margin-top: 30px; */
 
 font-family: Roboto;
 font-style: normal;
