@@ -207,8 +207,7 @@ transform: scale(0.5) translate(-50%, -50%);
     cursor: pointer;
 }
 
-.form-input:focus,
-.form-input:hover{
+.form-input:focus{
     outline:none;
     border: 1px solid var(--accent-color);
     
@@ -254,8 +253,7 @@ transform: scale(0.5) translate(-50%, -50%);
     transition: border 250ms var(--timing-fuction);
 }
 
-.form-field textarea:focus,
-.form-field textarea:hover{
+.form-field textarea:focus{
 outline: none;
 border: 1px solid var(--accent-color);
 }
